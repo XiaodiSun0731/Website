@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family:"Inter", sans-serif ;
+}
+
+/*导航 start */
+
+.nav{
+  width:100% ;
+  height: 82px;
+  background-color:#E6E6E6 ;
+  font-size: 16px;
+}
+
+.nav .wrap{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 160px;
+    position: relative; /* 让 .nav-right 绝对定位基于这个 */
+}
+
+/*左侧logo和菜单*/
+.nav .wrap .nav-left{
+  display:flex;
+  align-items: center;
+  gap: 80px;
+
+}
+
+.nav .wrap .nav-left img{
+  width: 80px;
+  height: auto;
+  gap: 50px;
+}
+
+.nav .nav-left .text{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.nav .nav-left .text a{
+  color: #575757;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav .nav-left .text a.active {
+  color: #FF008A;
+  text-decoration: none;
+}
+
+.nav-left .text span {
+  color: #E6E6E6;
+}
+
+/*右侧*/
+.nav-right {
+  display: flex;
+  align-items: center;  /* 确保 icon 垂直居中 */
+  gap: 80px;  /* 调整 icon 之间的间距 */
+  position: absolute;
+  right: 160px; /* 让它贴紧右侧 80px */
+  justify-items: center;
+}
+
+.nav .wrap .nav-right li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-right img {
+  width: 24px;  /* 设置图标宽度 */
+  height: 24px; /* 设置图标高度 */
+}
+
+/* 放大效果 */
+
+.nav-right img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*导航 end */
+
+/* 标题 start */
+.head {
+    width: 100%;
+    display: flex;          /* 新增 */
+    justify-content: center;/* 水平居中 */
+    align-items: center;    /* 垂直居中 */
+    color: #FF008A;
+    font-size: 28px;
+    font-weight: 500;
+    height: 58px;          /* 根据当前padding计算：50px*2 + 58px */
+    padding: 50px 0;        /* 调整padding */
+  }
+/* 标题 end */
+
+
+/* 商城 start */
+body{
+  background-color: #E6E6E6;
+}
+  
+.shop .grid-container{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px 200px;
+}
+  
+.item{
+  border-radius: 10px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+  
+.product{
+  width: 360px;
+  height: 332px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+  
+.info-container{
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+  
+.left-info{
+  text-align: left;
+}
+  
+.right-info{
+  text-align: right;
+}
+  
+.item-desc1,
+.item-desc2{
+  font-size: 12px;
+  color: #333;
+  margin-bottom: 4px;
+}
+  
+.item-name{
+  font-size: 16px;
+  font-weight: 600;
+  color:#333;
+}
+  
+.price-container{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  justify-content: flex-end;
+}
+  
+.item-price{
+  font-size: 18px;
+  font-weight: 700;
+  color: #FF008A;
+}
+  
+  /* 商城 end */

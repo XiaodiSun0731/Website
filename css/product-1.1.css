@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family:"Inter", sans-serif ;
+}
+
+/*导航 start */
+
+.nav{
+  width:100% ;
+  height: 82px;
+  background-color:#E6E6E6 ;
+  font-size: 16px;
+}
+
+.nav .wrap{
+    width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 160px;
+    position: relative; /* 让 .nav-right 绝对定位基于这个 */
+}
+
+/*左侧logo和菜单*/
+.nav .wrap .nav-left{
+  display:flex;
+  align-items: center;
+  gap: 80px;
+
+}
+
+.nav .wrap .nav-left img{
+  width: 80px;
+  height: auto;
+  gap: 50px;
+}
+
+.nav .nav-left .text{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+
+.nav .nav-left .text a{
+  color: #575757;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav .nav-left .text a.active {
+  color: #FF008A;
+  text-decoration: none;
+}
+
+.nav-left .text span {
+  color: #E6E6E6;
+}
+
+/*右侧*/
+.nav-right {
+  display: flex;
+  align-items: center;  /* 确保 icon 垂直居中 */
+  gap: 80px;  /* 调整 icon 之间的间距 */
+  position: absolute;
+  right: 160px; /* 让它贴紧右侧 80px */
+  justify-items: center;
+}
+
+.nav .wrap .nav-right li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-right img {
+  width: 24px;  /* 设置图标宽度 */
+  height: 24px; /* 设置图标高度 */
+}
+
+/* 放大效果 */
+
+.nav-right img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+/*导航 end */
+
+
+/* 内容 start*/
+body{
+  background-color: #1F1F1F;
+}
+
+.product{
+  width: 100%;
+  padding: 50px 0 20px;
+}
+
+.product .wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.left{
+  width: 50%;
+  max-width: 587px;
+  height: auto;
+}
+
+.left img{
+  width: 100%;
+  height: auto;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+}
+
+.right .type{
+  width: 134px;
+  height: 40px;
+}
+
+.price-container{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.price-container .icon{
+  width: auto;
+  height: 38px;
+}
+
+.price-container .item-price{
+  color: #FF008A;
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.item-exp{
+  width: 480px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400 ;
+  text-align: left;
+  line-height: 1.5;
+  letter-spacing: 1px;
+}
+
+.item-pic{
+  display: flex;
+  gap: 10px;
+  width: 149px;
+  height: 176px;
+  padding: 0 0 50px;
+}
+
+.item-pic img{
+  width: 100%;
+  height: auto;
+}
+
+.item-pic img:hover {
+  transform:scale(1.05);
+}
+
+.btn1 .btn2{
+  width: 337px;
+  height: 55px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+button:hover {
+  background-color: gray;
+  color: white;
+}
+/* 内容 end */

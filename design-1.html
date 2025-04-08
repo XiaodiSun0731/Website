@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0110 Virtual Fashion</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/design-1.css">
+</head>
+<body>
+
+<!--导航栏 start-->
+<div class="nav">
+    <div class="wrap">
+        <!--左侧logo和菜单-->
+
+        <div class="nav-left">
+            <img src="./Images/logo.png" alt="Logo">
+            <div class="text">
+              <a href="./home.html">HOME</a><span>|</span>
+              <a href="./collection.html">COLLECTIONS</a><span>|</span>
+              <a href="./product.html">PRODUCTS</a><span>|</span>
+              <a href="./design.html"class="active">DESIGN</a><span>|</span>
+              <a href="./about.html">ABOUT</a>
+            </div>
+        </div>
+
+
+        <!-- 右侧购物车和用户图标 -->
+        <ul class="nav-right">
+            <li>
+                <a href="#">
+                    <img src="./Images/cart.png" alt="cart">
+                </a>
+            </li>
+            <li>
+                <a href="#" id="userIcon">
+                    <img src="./Images/user.png" alt="User">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航栏 end-->
+
+<!--content start-->
+<div class="content">
+    <div class="wrap">
+        <div class="background">
+            <img src="./Images/d-0.png" alt="background">
+        </div>
+        <h3 class="title"> Congratulations! </h3>
+        <div id="resultImage" class="result-wrapper">
+            <!-- JS 动态插入图像 -->
+        </div>
+        <p>Your product will go live after successful review</p>
+    </div>
+</div>
+
+<script src="./js/design-1.js" defer></script>

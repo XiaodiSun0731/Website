@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0110 Virtual Fashion</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/design.css">
+</head>
+<body>
+
+<!--导航栏 start-->
+<div class="nav">
+    <div class="wrap">
+        <!--左侧logo和菜单-->
+
+        <div class="nav-left">
+            <img src="./Images/logo.png" alt="Logo">
+            <div class="text">
+              <a href="./home.html">HOME</a><span>|</span>
+              <a href="./collection.html">COLLECTIONS</a><span>|</span>
+              <a href="./product.html">PRODUCTS</a><span>|</span>
+              <a href="./design.html"class="active">DESIGN</a><span>|</span>
+              <a href="./about.html">ABOUT</a>
+            </div>
+        </div>
+
+
+        <!-- 右侧购物车和用户图标 -->
+        <ul class="nav-right">
+            <li>
+                <a href="#">
+                    <img src="./Images/cart.png" alt="cart">
+                </a>
+            </li>
+            <li>
+                <a href="#" id="userIcon">
+                    <img src="./Images/user.png" alt="User">
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--导航栏 end-->
+
+<!--content start-->
+<div class="content">
+    <div class="wrap">
+        <div class="background">
+            <img src="./Images/d-0.png" alt="background">
+        </div>
+        <!--左-->
+        <div class="big-box">
+            <div class="main-box">
+                <div class="left-box">
+                    <button class="sketch" id="chooseSketch">
+                        <img src="./Images/d-2.png" alt="sketch">
+                    </button>
+                    <!-- 弹窗 -->
+                    <div class="popup" id="popupModal">
+                        <div class="popup-content">
+
+                            <h3 class="title"> Choose Sketch Image </h3>
+                            <h3 class="type">Example Gallery</h3>
+                            <div class="example-box">
+                                <img src="./Images/d-6.png" alt="sample">
+                                <div class="gray-placeholder"></div>
+                                <div class="gray-placeholder"></div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- 弹窗2 -->
+                    <button class="reference" id="chooseReference">
+                        <img src="./Images/d-1.png" alt="reference">
+                    </button>
+
+                    <div class="popup" id="popupModal2">
+                        <div class="popup-content">
+
+                            <h3 class="title"> Choose Reference Image </h3>
+                            <h3 class="type">Example Gallery</h3>
+                            <div class="example-box2">
+                                <img src="./Images/d-7.png" alt="sample">
+                                <div class="gray-placeholder2"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- prompt start-->
+                <div class="prompt">
+                    <h3 class="ptitle"> Prompt </h3>
+                    <div class="input-box">
+                        <textarea placeholder="Enter your prompt here..."></textarea>
+                    
+                        <button class="btnAi" id="btnAi">
+                            <img src="./Images/d-4button.png" alt="button">
+                        </button>
+                    </div>
+                <!-- bottom button start-->
+                    <div class="bottom">
+                        <button class="btnGen" id="btnGen">
+                            Generate
+                        </button>
+                    </div>
+                </div>
+                <!-- prompt end-->
+                <!-- bottom button end-->
+
+            <!-- right start-->
+            <div class="right-box">
+                <div class="aiGrid">
+                </div>
+                <div class="bottom">
+                    <a href="./design-1.html">
+                    <button class="btnUp" id="btnUp" >
+                        Upload
+                    </button>
+                </div>   
+            </div>
+        <!-- right end-->
+    </div>
+    
+</div>
+
+<!--content end-->
+<script src="./js/design.js"></script>
+
+</body>
+</html>

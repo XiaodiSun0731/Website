@@ -1,0 +1,6 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend
+{margin:0;padding:0;}
+body{text-align:center;font-family:Helvetica Neue,Helvetica, Arial,Microsoft Yahei;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border:none;}

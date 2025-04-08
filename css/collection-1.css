@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family:"Inter", sans-serif ;
+}
+
+
+/*导航 start */
+
+.nav{
+  width:100% ;
+  height: 82px;
+  background-color:#E6E6E6 ;
+  font-size: 16px;
+  }
+  
+.nav .wrap{
+  width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 160px;
+  position: relative; /* 让 .nav-right 绝对定位基于这个 */
+}
+  
+  /*左侧logo和菜单*/
+.nav .wrap .nav-left{
+  display:flex;
+  align-items: center;
+  gap: 80px;
+}
+  
+.nav .wrap .nav-left img{
+  width: 80px;
+  height: auto;
+  gap: 50px;
+}
+  
+.nav .nav-left .text{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+  
+  
+.nav .nav-left .text a{
+  color: #575757;
+  text-decoration: none;
+  font-weight: 500;
+}
+  
+.nav .nav-left .text a.active {
+  color: #FF008A;
+  text-decoration: none;
+}
+  
+.nav-left .text span {
+  color: #E6E6E6;
+}
+  
+/*右侧*/
+.nav-right {
+  display: flex;
+  align-items: center;  /* 确保 icon 垂直居中 */
+  gap: 80px;  /* 调整 icon 之间的间距 */
+  position: absolute;
+  right: 160px; /* 让它贴紧右侧 80px */
+  justify-items: center;
+}
+  
+.nav .wrap .nav-right li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+  
+.nav-right img {
+  width: 24px;  /* 设置图标宽度 */
+  height: 24px; /* 设置图标高度 */
+}
+  
+/* 放大效果 */
+  
+.nav-right img:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+}
+  
+/*导航 end */
+
+/*banner start*/
+.banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color:#E6E6E6;
+    padding: 0;
+  }
+  
+  .banner .wrap{
+    position: relative;
+    width: 1300px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .banner .wrap img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /*banner end*/
+  
+  /* 内容模块 start*/
+  .content{
+    width: 100%;
+    background-color: #1F1F1F;
+    padding: 50px 0 20px;
+  }
+  
+ .content .wrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* The new start*/
+  .content .wrap .head{
+    width: 100%;
+    text-align: center;
+    color: #FF008A;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 58px;
+    margin-bottom: 20px;
+  }
+  
+  .content .wrap .poster-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  
+  .content .wrap .poster-box .poster-left{
+    width: 494px;
+    height: auto;
+    float: left;
+  }
+  
+  .content .wrap .poster-box .poster-right{
+    width: 555px;
+    height: auto;
+    float: right;
+  }
+  
+  .content .wrap .poster-box img{
+    width: auto;
+    height: 600px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .content .wrap .text {
+    text-align: right;
+    margin-left: auto;
+    margin-right:  110px;
+  }
+  
+  .content .wrap .text a{
+    display: block;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: 100;
+    line-height: 5px;
+    margin: 25px 5px;
+  }
+  /* The new end*/
+  
+  /* 2025collection start*/
+  
+  .content .wrap .image-grid{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    margin: 120px 50px ;
+  }
+  
+  .content .wrap .image-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .content .wrap .image-row img{
+    width: 400px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* 2025collection end*/
+  /* 内容模块 end*/

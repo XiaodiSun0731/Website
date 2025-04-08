@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0110 Virtual Fashion</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    
+    <!-- 导航栏 start -->
+    <div class="nav">
+        <div class="wrap">
+            <!-- 左侧 logo 和菜单 -->
+            <div class="nav-left">
+                <img src="./Images/logo.png" alt="Logo">
+                <div class="text">
+                    <a href="./home.html" class="active">HOME</a><span>|</span>
+                    <a href="./collection.html">COLLECTIONS</a><span>|</span>
+                    <a href="./product.html">PRODUCTS</a><span>|</span>
+                    <a href="./design.html">DESIGN</a><span>|</span>
+                    <a href="./about.html">ABOUT</a>
+                </div>
+            </div>
+
+            <!-- 右侧购物车和用户图标 -->
+            <ul class="nav-right">
+                <li>
+                    <a href="#">
+                        <img src="./Images/cart.png" alt="cart">
+                    </a>
+                </li>
+                <li>
+                    <a href="#" id="userIcon">
+                        <img src="./Images/user.png" alt="User">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 导航栏 end -->
+
+    <!-- banner start -->
+    <div class="content">
+        <div class="background">
+            <img src="./Images/h-bg.png" alt="background">
+        </div>
+        <div class="humen">
+            <img src="./Images/h-human.png" alt="humen">
+        </div>
+        <div class="text">
+            <img src="./Images/h-text.png" alt="text">
+        </div>
+    </div>
+    <!-- banner end -->
+
+    <!-- button start -->
+    <div class="cta">
+        <a href="./collection-1.html">
+            <button>
+                Explore More
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+        </a>
+    </div>
+    <!-- button end -->
+
+    <!-- 登录框 -->
+    <div class="wrapper" id="loginModal" style="display: none;">
+        <span class="icon-close" id="loginCloseBtn">
+            <img src="./Images/l-clear.png">
+        </span>
+        <div class="form-box login">
+            <h2> Login </h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <img src="./Images/l-email.png">
+                    </span>
+                    <input type="email" required>
+                    <label> Email </label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <img src="./Images/l-lock.png">
+                    </span>
+                    <input type="password" required>
+                    <label> Password </label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">Remember me</label>
+                    <a href="#">Forgot Password?</a>
+                </div>
+                <button type="submit" class="btn"> Login </button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="#" id="showRegist">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 登录框 end -->
+    <!-- 注册框 -->
+    <div class="wrapper" id="regist" style="display: none;">
+        <span class="icon-close" id="registCloseBtn">
+            <img src="./Images/l-clear.png">
+        </span>
+        <div class="form-box regist">
+            <h2>  Register </h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon">
+                        <img src="./Images/l-user.png">
+                    </span>
+                    <input type="text" required>
+                    <label>Username</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <img src="./Images/l-email.png">
+                    </span>
+                    <input type="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon">
+                        <img src="./Images/l-lock.png">
+                    </span>
+                    <input type="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">I agree to the terms & conditions</label>
+                </div>
+                <button type="submit" class="btn">Register</button>
+                <div class="login-register">
+                    <p>Already have an account? <a href="#" id="showLogin">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- 注册框 end -->
+    <!-- 绑定 login.js -->
+    <script src="./js/login.js"></script>
+    <script src="./js/regist.js"></script>
+</body>
+
+</html>
